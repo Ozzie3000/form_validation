@@ -52,6 +52,18 @@ function validateField4(x, y){
 	}
 }
 
+function validateField5(){
+	var datepicker =document.getElementById("datepicker").value;
+	if(datepicker != ""){
+		//alert('datepicker passes');
+		console.log("Date: " + datepicker);
+		document.getElementById("error5").value = "";
+	}else{
+		alert("In 'datepicker': don't leave it empty");
+		document.getElementById("error5").value = "please pick a date";
+	}
+}
+
 function validateForm(){
 	var fn =document.getElementById("fname").value;
 	if((fn != "") && (fn.search(/\d/) == -1)){
@@ -87,7 +99,7 @@ function validateForm(){
 	}
 	if((phoneNum != "") && (phone.length == 10)){
 		//alert('phone passes');
-		console.log("phone number: " + phone)
+		console.log("phone number: " + phone);
 	}else{
 		alert("In 'phone number': use only numbers, 10 digits, must not be empty");
 	}
@@ -95,7 +107,7 @@ function validateForm(){
 	var datepicker =document.getElementById("datepicker").value;
 	if(datepicker != ""){
 		//alert('datepicker passes');
-		console.log("Date: " + datepicker)
+		console.log("Date: " + datepicker);
 	}else{
 		alert("In 'datepicker Name': don't leave it empty");
 	}
