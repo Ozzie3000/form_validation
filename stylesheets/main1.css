@@ -1,0 +1,62 @@
+body{
+	background-color: #eeeeee;
+	font-size: 18px;
+	padding: 0 10px
+}
+
+form{
+	max-width: 500px;
+}
+/*
+.errorCode{
+	display: none !important;
+	color: red;
+}
+*/
+.bold{
+	font-weight: 900;
+}
+
+.field{
+	margin-bottom: 5px;
+		padding-bottom: 5px;
+}
+
+.field:hover{
+	background-color: #e2f442;
+}
+
+#phone1, #phone2, #phone3{
+	display: inline-block !important;
+}
+
+input[type=text]{
+	border-radius: 5px;
+	width: 300px;
+	display: block;
+	color: #1d00ff;
+}
+
+label{
+	display: block;
+	width: 300px;
+	color: #4286f4;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#ui-datepicker-div{
+	top: 300px !important;
+	left: 350px !important;
+}
+
+input[type=submit]{
+	font-weight: 800;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover{
+	cursor: help;
+	background-color: #6842f4;
+}
+

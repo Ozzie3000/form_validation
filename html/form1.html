@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Test form</title>
+<meta charset="utf-8">
+<meta name="description" content="HTML5, js, jquery" />
+<!-- server
+<link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
+<!--
+
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+-->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../javascript/js1.js" async></script>
+</head>
+<body>
+
+<div>
+	<form id="form1" onsubmit="return validateForm()" method="post">
+		<p>Welcome. Please fill out this form <u>completely</u>.</p>
+		<label for="fname" class="bold">First Name</label>
+		<input type="text" name="fname" id="fname" class="field" onchange="validateField1()">
+		<input type="text" id="error1" class="errorCode" disabled="true">
+		<br>
+		<label for="lname" class="bold">Last Name</label>
+		<input type="text" name="lname" id="lname" class="field" onchange="validateField2()">
+		<input type="text" id="error2" class="errorCode" disabled="true">
+		<br>
+		<label for="company" class="bold">Company name</label>
+		<input type="text" name="company" id="company" class="field" onchange="validateField3()">
+		<input type="text" id="error3" class="errorCode" disabled="true">
+		<br>
+		<label for="phone" class="bold">Phone number (only numbers)</label>
+		<input type="text" name="phone" id="phone1" class="field" onchange="validateField4('phone1', 3)" title="only numbers please" style="width: 90px">
+		<input type="text" name="phone" id="phone2" class="field" onchange="validateField4('phone2', 3)" title="only numbers please" style="width: 90px">
+		<input type="text" name="phone" id="phone3" class="field" onchange="validateField4('phone3', 4)" title="only numbers please" style="width: 90px">
+		<input type="text" id="error4" class="errorCode" disabled="true">
+		<br>
+		<label for="datepicker" class="bold">Datepicker</label>
+		<input type="text" name="datepicker" id="datepicker" class="field">
+		<input type="text" id="error5" class="errorCode" disabled="true">
+		<br>
+		<input type="submit" data-inline="true" value="Submit" title="Marketo Submission">
+	</form>
+</div>
+ 
+
+<br><br><br>
+</body>
+</html>
